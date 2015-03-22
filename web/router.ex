@@ -19,7 +19,9 @@ defmodule PhoenixJsonApi.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", PhoenixJsonApi do
-  #   pipe_through :api
-  # end
+  scope "/api", PhoenixJsonApi do
+    pipe_through :api
+
+    resources "/contacts", ContactController
+  end
 end
