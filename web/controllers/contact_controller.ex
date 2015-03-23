@@ -1,6 +1,5 @@
 defmodule PhoenixJsonApi.ContactController do
   use PhoenixJsonApi.Web, :controller
-  alias PhoenixJsonApi.Repo
   alias PhoenixJsonApi.Contact
 
   plug :action
